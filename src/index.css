@@ -88,7 +88,7 @@ body {
 .profile__avatar-edit-button {
   width: 26px;
   height: 26px;
-  background-image: url("/images/Vector.svg");
+  background-image: url("../images/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -125,7 +125,7 @@ body {
 .profile__edit-button {
   width: 18px;
   height: 18px;
-  background-image: url("/images/Vector.svg");
+  background-image: url("../images/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px 12px;
@@ -288,7 +288,7 @@ body {
 .memories__like {
   width: 22px;
   height: 19px;
-  background-image: url("/images/corazoncito.svg");
+  background-image: url("../images/corazoncito.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -306,7 +306,7 @@ body {
 }
 
 .memories__like_active {
-  background-image: url("/images/corazoncito-activo.svg");
+  background-image: url("../images/corazoncito-activo.svg");
 }
 
 .memories__like_active:hover {
@@ -356,7 +356,7 @@ body {
   right: -24px;
   width: 40px;
   height: 40px;
-  background: transparent url("/images/Close Icon.svg") center/contain no-repeat;
+  background: transparent url("../images/Close Icon.svg") center/contain no-repeat;
   background-size: 100% 100%;
   border: none;
   cursor: pointer;
