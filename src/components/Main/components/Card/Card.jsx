@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import CurrentUserContext from "../../../../contexts/CurrentUserContext";
+import trash from "../../../../images/Trash.svg";
 
 function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   const { currentUser } = useContext(CurrentUserContext);
@@ -41,7 +42,7 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
               aria-label="Eliminar"
             >
               <img
-                src="/images/Trash.svg"
+                src={trash}
                 alt="Eliminar"
                 className="memories__delete-icon"
               />
@@ -52,7 +53,9 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
       <div className="memories__info">
         <h2 className="memories__title">{card.name}</h2>
         <button
-          className={isLiked ? "memories__like memories__like_active" : "memories__like"}
+          className={
+            isLiked ? "memories__like memories__like_active" : "memories__like"
+          }
           type="button"
           onClick={handleLikeClick}
           aria-label={isLiked ? "Quitar like" : "Dar like"}
